@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thịt chó"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: $1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/foodQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity: 0"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/plusKey"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/plus" />
+
+            <ImageButton
+                android:id="@+id/subKey"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/sub" />
+
+            <ImageButton
+                android:id="@+id/submitKey"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/cart" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
